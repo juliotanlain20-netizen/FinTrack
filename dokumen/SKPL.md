@@ -3,6 +3,7 @@
 ## FinTrack: Personal Finance Management System
 
 | | |
+|---|---|---|
 | **Mata Kuliah** | Implementasi dan Pengujian Perangkat Lunak |
 | **Program Studi** | Informatika, Direktorat Kampus Surabaya, Universitas Telkom |
 | **Dosen Pengampu** | Daud Muhajir, S.Kom., M.Kom. |
@@ -228,6 +229,42 @@ Kategori pemasukan dan pengeluaran dikelola di modul ini.
 | SKPL-F-044 | Sistem harus menghitung persentase pengeluaran tiap kategori terhadap total pengeluaran. | S |
 
 ### 3.10 Use Case
+
+```mermaid
+flowchart LR
+    U([User])
+
+    subgraph SYS["Sistem FinTrack"]
+        direction TB
+        UC01([UC-01 Registrasi])
+        UC02([UC-02 Login / Logout])
+        UC03([UC-03 Kelola Profil])
+        UC04([UC-04 Kelola Dompet])
+        UC05([UC-05 Catat Pemasukan])
+        UC06([UC-06 Catat Pengeluaran])
+        UC07([UC-07 Kelola Kategori])
+        UC08([UC-08 Atur Budget])
+        UC09([UC-09 Terima Peringatan Budget])
+        UC10([UC-10 Lihat Riwayat Transaksi])
+        UC11([UC-11 Lihat Laporan])
+        UC12([UC-12 Lihat Analisis Pengeluaran])
+    end
+
+    U --- UC01
+    U --- UC02
+    U --- UC03
+    U --- UC04
+    U --- UC05
+    U --- UC06
+    U --- UC07
+    U --- UC08
+    U --- UC10
+    U --- UC11
+    U --- UC12
+    U --- UC09
+
+    UC09 -.->|extend| UC06
+```
 
 | ID | Use Case | Aktor | Kebutuhan Terkait |
 |---|---|---|---|
