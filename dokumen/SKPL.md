@@ -3,10 +3,9 @@
 ## FinTrack: Personal Finance Management System
 
 | | |
-|---|---|
-| **Mata Kuliah** | ...................... |
+| **Mata Kuliah** | Implementasi dan Pengujian Perangkat Lunak |
 | **Program Studi** | Informatika, Direktorat Kampus Surabaya, Universitas Telkom |
-| **Dosen Pengampu** | ...................... |
+| **Dosen Pengampu** | Daud Muhajir, S.Kom., M.Kom. |
 | **Versi Dokumen** | 1.0 |
 | **Tahun** | 2026 |
 
@@ -14,12 +13,11 @@
 
 | No | Nama | NIM |
 |---|---|---|
-| 1 | Nayyara Aurelia Putri | 103072400097 |
-| 2 | Jingga Jil Carissa | 103072400121 |
-| 3 | Bethari Nevyta Amaries | 103072430016 |
-| 4 | A'ilah Nailul Fa'izah | 103072400042 |
-| 5 | Julio Chrysanto Tanlain | 103072400110 |
-| 6 | Misael Arafian Fonataba | 103072400017 |
+| 1 | Fathir Al Farih | 103072400002 |
+| 2 | Bethari Nevyta Amaries | 103072430016 |
+| 3 | A'ilah Nailul Fa'izah | 103072400042 |
+| 4 | Julio Chrysanto Tanlain | 103072400110 |
+| 5 | Misael Arafian Fonataba | 103072400017 |
 
 ---
 
