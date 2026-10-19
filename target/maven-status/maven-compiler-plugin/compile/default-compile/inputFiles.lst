@@ -1,42 +1,44 @@
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/TransactionServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/WalletServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/AddTransactionServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/DeleteNotificationServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/DashboardSummary.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/WalletDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/AddWalletServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/User.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/BudgetNotification.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/Wallet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/NotificationServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/DashboardDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/BudgetDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/EditWalletServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/MarkNotificationReadServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/CategoryServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/ProfileDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/MonthlyTransactionSummary.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/TransactionDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/DashboardServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/BudgetServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/DashboardExportServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/AddBudgetServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/LoginDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/Profile.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/JDBC.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/Category.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/PhysicalWallet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/Transaction.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/NotificationDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/CategorySpendingSummary.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/RegisterDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/DeleteTransactionServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/AuthServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/Budget.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/DeleteWalletServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/EWallet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/dao/CategoryDAO.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/LogoutServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/ProfileServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/servlets/MarkAllNotificationReadServlet.java
-/Users/jinggajilcarissa/Telkom University/PBO-tubes/PBO-tubes/src/main/java/model/RecentActivity.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\NotificationDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\BudgetNotification.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\ProfileDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\AddBudgetServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\WalletDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\PhysicalWallet.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\LoginDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\DashboardExportServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\DashboardSummary.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\CategorySpendingSummary.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\EditWalletServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\AIAdvisorServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\Budget.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\Category.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\CategoryDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\MarkAllNotificationReadServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\service\AIRecommendationService.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\RecentActivity.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\JDBC.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\Profile.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\DeleteWalletServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\LogoutServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\User.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\Transaction.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\EWallet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\MarkNotificationReadServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\DashboardDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\MonthlyTransactionSummary.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\DashboardServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\AddWalletServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\DeleteTransactionServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\RegisterDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\AuthServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\DeleteNotificationServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\NotificationServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\CategoryServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\model\Wallet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\AddTransactionServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\BudgetServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\BudgetDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\dao\TransactionDAO.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\WalletServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\TransactionServlet.java
+C:\Users\Julio\PBO-tubes\src\main\java\servlets\ProfileServlet.java
