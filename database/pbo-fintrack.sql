@@ -431,3 +431,168 @@ BEGIN
 END$$
 DELIMITER ;
 CALL generate_transactions();
+
+-- TAMBAHAN SHOP 
+-- 1. TABEL BANKS
+CREATE TABLE banks (
+    bank_id INT(16) AUTO_INCREMENT PRIMARY KEY,
+    bank_name VARCHAR(50) NOT NULL UNIQUE
+);
+
+-- 2. TABEL PRODUCTS
+CREATE TABLE products (
+    product_id VARCHAR(20) PRIMARY KEY,
+    product_name VARCHAR(100) NOT NULL,
+    unit VARCHAR(20) NOT NULL,
+    unit_price DECIMAL(18,2) NOT NULL,
+    min_stock INT(16) NOT NULL,
+    stock INT(16) NOT NULL,
+    bank_id INT(16) NOT NULL,
+    FOREIGN KEY (bank_id) REFERENCES banks(bank_id),
+    CHECK (unit_price >= 0),
+    CHECK (min_stock >= 0),
+    CHECK (stock >= 0)
+);
+
+-- 3. TABEL CARTS
+CREATE TABLE carts (
+    cart_id INT(16) AUTO_INCREMENT PRIMARY KEY,
+    user_id INT(16) NOT NULL,
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id)
+        REFERENCES users(user_id)
+        ON DELETE CASCADE
+);
+
+-- 4. TABEL CART_DETAILS
+CREATE TABLE cart_details (
+    cart_id INT(16) NOT NULL,
+    product_id VARCHAR(20) NOT NULL,
+    quantity INT(16) NOT NULL,
+    PRIMARY KEY (cart_id, product_id),
+    FOREIGN KEY (cart_id)
+        REFERENCES carts(cart_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (product_id)
+        REFERENCES products(product_id),
+    CHECK (quantity > 0)
+);
+
+-- 5. TABEL FAVORITES
+CREATE TABLE favorites (
+    user_id INT(16) NOT NULL,
+    product_id VARCHAR(20) NOT NULL,
+    added_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (user_id, product_id),
+    FOREIGN KEY (user_id)
+        REFERENCES users(user_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (product_id)
+        REFERENCES products(product_id)
+        ON DELETE CASCADE
+);
+
+-- 6. TABEL SALES
+CREATE TABLE sales (
+    sale_id INT(16) AUTO_INCREMENT PRIMARY KEY,
+    sale_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    total DECIMAL(18,2) NOT NULL,
+    user_id INT(16) NOT NULL,
+    FOREIGN KEY (user_id)
+        REFERENCES users(user_id)
+        ON DELETE CASCADE,
+    CHECK (total >= 0)
+);
+
+-- 7. TABEL SALE_DETAILS
+CREATE TABLE sale_details (
+    sale_id INT(16) NOT NULL,
+    product_id VARCHAR(20) NOT NULL,
+    quantity INT(16) NOT NULL,
+    sale_price DECIMAL(18,2) NOT NULL,
+    PRIMARY KEY (sale_id, product_id),
+    FOREIGN KEY (sale_id)
+        REFERENCES sales(sale_id)
+        ON DELETE CASCADE,
+    FOREIGN KEY (product_id)
+        REFERENCES products(product_id),
+    CHECK (quantity > 0),
+    CHECK (sale_price >= 0)
+);
+
+
+-- INSERT 5 DATA BANKS
+INSERT INTO banks (bank_name) VALUES
+('BRI'),
+('BCA'),
+('Bank Mandiri'),
+('BNI'),
+('Bank Mega');
+
+
+-- INSERT 5 DATA PRODUCTS
+INSERT INTO products
+(product_id, product_name, unit, unit_price, min_stock, stock, bank_id)
+VALUES
+('ETOL-001', 'BRIZZI', 'kartu', 25000.00, 5, 50, 1),
+('ETOL-002', 'Flazz', 'kartu', 25000.00, 5, 45, 2),
+('ETOL-003', 'e-Money Mandiri', 'kartu', 25000.00, 5, 40, 3),
+('ETOL-004', 'TapCash', 'kartu', 25000.00, 5, 35, 4),
+('ETOL-005', 'Kartu MegaCash', 'kartu', 25000.00, 5, 30, 5);
+
+
+-- INSERT 5 DATA CARTS
+INSERT INTO carts (cart_id, user_id, created_at) VALUES
+(1, 1, '2026-10-15 09:00:00'),
+(2, 2, '2026-10-15 10:00:00'),
+(3, 3, '2026-10-16 11:00:00'),
+(4, 4, '2026-10-16 13:00:00'),
+(5, 5, '2026-10-17 14:00:00');
+
+
+-- INSERT 5 DATA CART_DETAILS
+INSERT INTO cart_details (cart_id, product_id, quantity) VALUES
+(1, 'ETOL-001', 2),
+(2, 'ETOL-002', 1),
+(3, 'ETOL-003', 3),
+(4, 'ETOL-004', 1),
+(5, 'ETOL-005', 2);
+
+
+-- INSERT 5 DATA FAVORITES
+INSERT INTO favorites (user_id, product_id, added_at) VALUES
+(1, 'ETOL-001', '2026-10-15 09:30:00'),
+(2, 'ETOL-002', '2026-10-15 10:30:00'),
+(3, 'ETOL-003', '2026-10-16 11:30:00'),
+(4, 'ETOL-004', '2026-10-16 13:30:00'),
+(5, 'ETOL-005', '2026-10-17 14:30:00');
+
+
+-- INSERT 5 DATA SALES
+INSERT INTO sales (sale_id, sale_date, total, user_id) VALUES
+(1, '2026-10-15 10:00:00', 50000.00, 1),
+(2, '2026-10-15 11:00:00', 25000.00, 2),
+(3, '2026-10-16 12:00:00', 75000.00, 3),
+(4, '2026-10-16 14:00:00', 25000.00, 4),
+(5, '2026-10-17 15:00:00', 50000.00, 5);
+
+
+-- INSERT 5 DATA SALE_DETAILS
+INSERT INTO sale_details
+(sale_id, product_id, quantity, sale_price)
+VALUES
+(1, 'ETOL-001', 2, 25000.00),
+(2, 'ETOL-002', 1, 25000.00),
+(3, 'ETOL-003', 3, 25000.00),
+(4, 'ETOL-004', 1, 25000.00),
+(5, 'ETOL-005', 2, 25000.00);
+
+
+-- CEK SELURUH DATA
+SELECT * FROM banks;
+SELECT * FROM products;
+SELECT * FROM carts;
+SELECT * FROM cart_details;
+SELECT * FROM favorites;
+SELECT * FROM sales;
+SELECT * FROM sale_details;
