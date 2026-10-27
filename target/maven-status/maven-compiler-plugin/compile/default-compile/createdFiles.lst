@@ -1,2 +1,9 @@
-service\AIRecommendationService.class
+model\CartDetail.class
 servlets\AIAdvisorServlet.class
+model\Cart.class
+model\Produk.class
+model\Bank.class
+model\Favourite.class
+model\PenjualanDetail.class
+model\Penjualan.class
+service\AIRecommendationService.class
