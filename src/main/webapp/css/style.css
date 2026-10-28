@@ -3726,3 +3726,193 @@ input[type=range]::-moz-range-thumb {
     background: #9EDE04;
 }
 
+/* =====================================
+   SHOP PAGE
+===================================== */
+.shop-cart-btn {
+    position: relative;
+}
+
+.shop-cart-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 999px;
+    background: #9EDE04;
+    color: #0B3A30;
+    font-size: 0.7rem;
+    font-weight: 700;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-search-input {
+    width: 280px;
+}
+
+/* Product card */
+.shop-card {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 22px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shop-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.shop-card-image {
+    position: relative;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFFADF;
+}
+
+.shop-bg-mandiri { background: linear-gradient(135deg, #fafff0 0%, #d4eec4 100%); }
+.shop-bg-bni     { background: linear-gradient(135deg, #fff4e0 0%, #f6d9b0 100%); }
+.shop-bg-bri     { background: linear-gradient(135deg, #e6f0fb 0%, #bcd4f2 100%); }
+.shop-bg-bca     { background: linear-gradient(135deg, #e8eefb 0%, #c3d0ee 100%); }
+.shop-bg-other   { background: linear-gradient(135deg, #f1f1ec 0%, #dcded3 100%); }
+
+/* e-money card illustration */
+.shop-emoney-card {
+    position: relative;
+    width: 170px;
+    height: 105px;
+    border-radius: 14px;
+    background: #0B3A30;
+    color: #ffffff;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.shop-emoney-chip {
+    font-size: 1.3rem;
+    color: #9EDE04;
+}
+
+.shop-emoney-brand {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.shop-emoney-bank {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #a0b2af;
+}
+
+/* Favorite */
+.shop-fav-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.shop-fav-btn:hover {
+    background: #ffffff;
+    color: #dc2626;
+}
+
+.shop-fav-btn.active {
+    color: #dc2626;
+}
+
+/* Card body */
+.shop-card-body {
+    padding: 18px 20px 20px;
+}
+
+.shop-product-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 2px;
+}
+
+.shop-product-bank {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+.shop-product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0B3A30;
+    margin-bottom: 14px;
+}
+
+.shop-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shop-buy-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 16px;
+}
+
+.shop-cart-add {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1.5px solid #0B3A30;
+    background: transparent;
+    color: #0B3A30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.shop-cart-add:hover {
+    background: #0B3A30;
+    color: #ffffff;
+}
+
+.shop-cart-add:focus-visible,
+.shop-fav-btn:focus-visible,
+.shop-buy-btn:focus-visible {
+    outline: 3px solid rgba(158, 222, 4, 0.5);
+    outline-offset: 2px;
+}
+
+@media (max-width: 576px) {
+    .shop-search-input {
+        width: 100%;
+    }
+}
